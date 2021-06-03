@@ -19,15 +19,15 @@ public class ImparPar {
 	if(a%2==0) {
 		
 		
-		System.out.println("É par\n" + a);
-		System.out.println(Math.sqrt(a));
+		
+		System.out.println("É par\n" + "Raiz Quadrada" + Math.sqrt(a));
 		
 	
 	}else {
 
-		a = Math.pow(a, 2);
+		a	=	 Math.pow(a, 2);
+		System.out.println("É impar\n" + "Resultado Elevado " + a);
 		
-		System.out.println("É impar\n" + a);
 		
 	}
 	
