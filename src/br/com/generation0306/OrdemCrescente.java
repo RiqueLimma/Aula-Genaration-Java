@@ -8,39 +8,29 @@ public class OrdemCrescente {
 	
 		Scanner entrada  = new Scanner(System.in);
 	
-	int x, i, c, maior = 0;
+	int n1, n2, n3, maior = 0;
 	
 	System.out.println("Digite um Primeiro Número");
-	x = entrada.nextInt();
+	n1 = entrada.nextInt();
 	
 	System.out.println("Digite um Segundo Número");
-	i = entrada.nextInt();
+	n2 = entrada.nextInt();
 	
 	System.out.println("Digite um Terceiro Número");
-	c = entrada.nextInt();
+	n3 = entrada.nextInt();
 
 
-	if (x < i) {
-		if ( i < c) {
-			System.out.println(x+"\n"+i+"\n"+c);
+	if (n1 < n2 && n2 < n3) {
+			System.out.println(n1+"\n"+n2+"\n"+n3);
 		}
-		
-		else if(x < i) {
-			System.out.println(x+"\n"+c+"\n"+i);
-		} else {
-			System.out.println(c+"\n"+x+"\n"+i);
-			}
+		 if ( n2< n3 && n1 <n3) {
+			System.out.println(n2+"\n"+n1+"\n"+n3);
 		}
-	
-		else if ( i< c) {
-		if (x <c) {
-			System.out.println(i+"\n"+x+"\n"+c);
-		}
-		else {
-			System.out.println(i+"\n"+c+"\n"+x);
+		else if (n3 < n1 && n1 < n2) {
+			System.out.println(n2+"\n"+n3+"\n"+n1);
 			}
 		}
 
-	}
 }
+
 
